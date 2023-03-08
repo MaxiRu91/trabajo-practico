@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada&family=Roboto&family=Shantell+Sans:wght@500&display=swap');
+
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* Encabezado */
+header {
+  top: 0;
+  left: 0;
+  width: calc(100% - 40px);
+  background-color: #6e3e3e;
+  color: #fff;
+  padding: 20px 20px 20px 40px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-right: 20px;
+}
+
+.Nombre {
+  max-width: 300px;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+#foto {
+  border-radius: 50%;
+  float: left;
+  margin-left: 30px;
+  width: 200px;
+  height: 200px;
+}
+
+#menu {
+  background-color: #333;
+  color: #fff;
+  padding: 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* css datos nombre, dni, etc*/
+.informacion {
+	position: relative;
+	display: inline-block;
+  top: 0px;
+  z-index: 1;
+  margin-right: 25px;
+}
+ #datos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.informacion:hover {
+  background-color: #474747;
+  color: #fff;
+  cursor: pointer;
+}
+
+.informacion .informacion2 {
+  visibility: hidden;
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% + 10px);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.informacion:hover .informacion2 {
+	visibility: visible;
+	opacity: 1;
+}
+
+.informacion {
+  list-style: none;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #6e3e3e;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+/*menu de contenido del CV*/
+  /* Estilos generales */
+main {
+  color: #333;
+  padding: 0px;
+  text-align: center;
+}
+.contenido {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  margin-right: 45px;
+}
+
+  /* Estilos específicos para la lista de habilidades */
+#habilidades ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#habilidades li {
+  list-style: none;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #818181;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
